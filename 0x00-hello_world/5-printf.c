@@ -3,9 +3,9 @@
 /**
  * main - Main Entry
  *
- * printf: it prints out
+ * Printf: it prints out
  *
- * return: Always Present (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
