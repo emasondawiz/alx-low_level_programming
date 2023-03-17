@@ -32,23 +32,22 @@ int main(void)
 		result = lastdigit;
 	}
 
-	if (result > 0)
+	if (result > 5)
 	{
-		printf("%d is positive\n", n);
+		printf("Last digit of %d is %d and is greater than 5\n", n, result);
 
 	}
 
-	else if (result < 0)
+	else if (result < 6 && result != 0)
 	{
-		printf("%d is negative\n", n);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, result);
 
 	}
 	else
 	{
-		printf("%d is zero\n", n);
+		printf("Last digit of %d is %d and is 0\n", n, result);
 
 	}
 
 	return (0);
 }
-
