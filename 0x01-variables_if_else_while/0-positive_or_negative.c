@@ -7,7 +7,11 @@
  *
  * tostring: Function that converts integer to string
  *
-  * Return: Always 0 (Success)
+ * Return: Always 0 (Success)
+ *
+ * Char: chatacters used in tostring function
+ *
+ * Int: Integer used in tostring function
  *
  */
 
@@ -16,6 +20,8 @@ void tostring(char [], int);
 int main(void)
 {
 	int n;
+
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
@@ -41,7 +47,10 @@ int main(void)
 void tostring(char str[], int num)
 {
 	int i, rem, len = 0, n;
+
 	n = num;
+
+
 	while (n != 0)
 	{
 		len++;
