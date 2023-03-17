@@ -16,7 +16,7 @@ int main(void)
 {
 	int i, count;
 
-	char ch[] = "abcdefghijklmnopqrstuvwxyz ";
+	char ch[] = "abcdefghijklmnopqrstuvwxyz";
 
 	count = strlen(ch);
 
