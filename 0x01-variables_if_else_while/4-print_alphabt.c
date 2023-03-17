@@ -22,7 +22,7 @@ int main(void)
 
 	for (i = 0; i < count; i++)
 	{
-		if (ch[i] != 'q' && ch[i] !='e')
+		if (ch[i] != 'q' && ch[i] != 'e')
 		{
 			putchar(ch[i]);
 		}
