@@ -22,13 +22,9 @@ int main(void)
 
 	for (i = 0; i < count; i++)
 	{
-		if (i == count - 1)
+		putchar(ch[i]);
+		if (i != count - 1)
 		{
-			putchar(ch[i]);
-		}
-		else
-		{
-			putchar(ch[i]);
 			putchar(',');
 			putchar(' ');
 		}
