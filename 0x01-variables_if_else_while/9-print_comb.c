@@ -14,16 +14,12 @@
 
 int main(void)
 {
-	int i, count;
+	int i;
 
-	char ch[] = "0123456789";
-
-	count = strlen(ch);
-
-	for (i = 0; i < count; i++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(ch[i]);
-		if (i != count - 1)
+		putchar(i + '0');
+		if (i != 9)
 		{
 			putchar(',');
 			putchar(' ');
