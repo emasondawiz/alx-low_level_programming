@@ -8,18 +8,6 @@
  * Return: Always 0 (success)
  *
  */
-
-void times_table(void)
-{
-	int i;
-
-	for (i = 0; i <= 9; i++)
-	{
-		mydisplay(i);
-		_putchar('\n');
-	}
-}
-
 int mydisplay(int n)
 {
 	int i;
@@ -44,4 +32,15 @@ int mydisplay(int n)
 		}
 	}
 	return (0);
+}
+
+void times_table(void)
+{
+	int i;
+
+	for (i = 0; i <= 9; i++)
+	{
+		mydisplay(i);
+		_putchar('\n');
+	}
 }
