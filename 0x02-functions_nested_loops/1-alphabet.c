@@ -1,23 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - a function that  print all lower case alphabet
  *
  * Return: Always 0 (Success)
  *
- * print_alphabet: print all lower case alphabet
  */
-
-int main(void)
-{
-
-	print_alphabet();
-	_putchar('\n');
-	return (0);
-
-
-
-}
 
 void print_alphabet(void)
 {
