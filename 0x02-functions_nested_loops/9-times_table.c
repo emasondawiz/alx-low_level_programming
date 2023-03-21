@@ -3,14 +3,19 @@
 /**
  * times_table - a function that produces the times table
  *
- * mydisplay -  mydisplay function populates the table in respect to the number
  *
  * Return: Always 0 (success)
  *
  */
-int mydisplay(int n)
+
+
+void times_table(void)
 {
-	int i;
+	int n;
+
+	for (n = 0; n <= 9; n++)
+	{
+		int i;
 
 	for (i = 0; i <= 9; i++)
 	{
@@ -31,16 +36,6 @@ int mydisplay(int n)
 			_putchar(' ');
 		}
 	}
-	return (0);
-}
-
-void times_table(void)
-{
-	int i;
-
-	for (i = 0; i <= 9; i++)
-	{
-		mydisplay(i);
 		_putchar('\n');
 	}
 }
