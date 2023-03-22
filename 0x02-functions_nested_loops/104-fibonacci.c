@@ -16,7 +16,7 @@ int main(void)
 {
 	int num;
 
-	long add, prev, n2, n1;
+	int add, prev, n2, n1;
 
 
 	n1 = 1;
@@ -28,22 +28,22 @@ int main(void)
 	{
 		if (num == 0)
 		{
-			printf("%ld, ", n1);
+			printf("%d, ", n1);
 		}
 		else if (num == 1)
 		{
-			printf("%ld, ", n2);
+			printf("%d, ", n2);
 		}
 		else
 		{
 
 			if (num == 97)
 			{
-				printf("%ld\n", labs(add));
+				printf("%d\n", labs(add));
 			}
 			else
 			{
-				printf("%ld, ", labs(add));
+				printf("%d, ", labs(add));
 			}
 			prev = n2;
 			n2 = add;
