@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -15,7 +16,7 @@ int main(void)
 {
 	int num;
 
-	unsigned long int add, prev, n2, n1;
+	long int add, prev, n2, n1;
 
 
 	n1 = 1;
@@ -35,17 +36,14 @@ int main(void)
 		}
 		else
 		{
-			if (add < 0)
-			{
-				add = 0 - add;
-			}
+
 			if (num == 97)
 			{
-				printf("%ld\n", (unsigned long) add);
+				printf("%ld\n", labs(add));
 			}
 			else
 			{
-				printf("%ld, ", (unsigned long) add);
+				printf("%ld, ", labs(add));
 			}
 			prev = n2;
 			n2 = add;
