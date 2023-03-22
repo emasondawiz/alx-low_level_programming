@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <unistd.h>
+
+/**
+ * main - Entry point
+ *
+ * naturalnumber - a function that calculate natural numbers
+ *
+ * @n: input of naturalnumber
+ *
+ * Return: Always 0 (success)
+ *
+ */
+
+int naturalnumber(int n);
+int main(void)
+{
+	printf("%d\n", naturalnumber(1024));
+}
+int naturalnumber(int n)
+{
+	int rem;
+
+	if (n == 1)
+	{
+		return (0);
+	}
+	else
+	{
+		if (n == 1024)
+		{
+			rem = 0;
+		}
+		else if (n % 3 == 0 || n % 5 == 0)
+		{
+			rem = n;
+		}
+		else
+		{
+			rem = 0;
+		}
+		return (rem + naturalnumber(n - 1));
+	}
+}
