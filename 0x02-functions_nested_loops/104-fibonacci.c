@@ -16,7 +16,7 @@ int main(void)
 {
 	int num;
 
-	int add, prev, n2, n1;
+	long int add, prev, n2, n1;
 
 
 	n1 = 1;
