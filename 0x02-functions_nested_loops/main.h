@@ -3,7 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
-#include <stdio.h>
 
 int _putchar(char c);
 void print_alphabet(void);
