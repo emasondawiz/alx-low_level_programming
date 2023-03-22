@@ -39,11 +39,11 @@ int main(void)
 
 			if (num == 97)
 			{
-				printf("%d\n", labs(add));
+				printf("%ld\n", labs(add));
 			}
 			else
 			{
-				printf("%d, ", labs(add));
+				printf("%ld, ", labs(add));
 			}
 			prev = n2;
 			n2 = add;
