@@ -28,11 +28,11 @@ int main(void)
 	{
 		if (num == 0)
 		{
-			printf("%d, ", n1);
+			printf("%ld, ", n1);
 		}
 		else if (num == 1)
 		{
-			printf("%d, ", n2);
+			printf("%ld, ", n2);
 		}
 		else
 		{
