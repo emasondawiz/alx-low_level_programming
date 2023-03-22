@@ -23,6 +23,11 @@ void times_table(void)
 
 		if (result <= 9)
 		{
+			if(i > 0)
+			{
+				_putchar(' ');
+
+			}
 			_putchar(result + '0');
 			if (i < 9)
 			{
