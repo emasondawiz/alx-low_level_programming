@@ -35,6 +35,10 @@ int main(void)
 		}
 		else
 		{
+			if (add < 0)
+			{
+				add = 0 - add;
+			}
 			if (num == 97)
 			{
 				printf("%ld\n", (unsigned long) add);
