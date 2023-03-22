@@ -13,7 +13,7 @@
 
 int main(void)
 {
-	int n1, num, add, prev, n2, data, sumofeven, limit;
+	long n1, num, add, prev, n2, data, sumofeven, limit;
 
 	n1 = 1;
 	data = 40;
@@ -41,8 +41,10 @@ int main(void)
 			if (add <= limit)
 				if (add % 2 == 0)
 					sumofeven += add;
-			else
-				break;
+				else
+				{
+					break;
+				}
 			prev = n2;
 			n2 = add;
 			add = prev + n2;
