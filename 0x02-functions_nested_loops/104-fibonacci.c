@@ -13,9 +13,9 @@
 
 int main(void)
 {
-	int n1, num;
+	int num;
 
-	unsigned long int add, prev, n2;
+	unsigned long int add, prev, n2, n1;
 
 
 	n1 = 1;
@@ -27,7 +27,7 @@ int main(void)
 	{
 		if (num == 0)
 		{
-			printf("%d, ", n1);
+			printf("%ld, ", n1);
 		}
 		else if (num == 1)
 		{
@@ -37,11 +37,11 @@ int main(void)
 		{
 			if (num == 97)
 			{
-				printf("%ld\n", add);
+				printf("%ld\n", (unsigned long) add);
 			}
 			else
 			{
-				printf("%ld, ", add);
+				printf("%ld, ", (unisgned long) add);
 			}
 			prev = n2;
 			n2 = add;
