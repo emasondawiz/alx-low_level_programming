@@ -13,8 +13,7 @@
 
 int main(void)
 {
-	int n1, num;
-	unsigned int add, prev, n2, data, sumofeven, limit;
+	int n1, num, add, prev, n2, data, sumofeven, limit;
 
 	n1 = 1;
 	data = 40;
