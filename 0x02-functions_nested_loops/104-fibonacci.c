@@ -41,7 +41,7 @@ int main(void)
 			}
 			else
 			{
-				printf("%ld, ", (unisgned long) add);
+				printf("%ld, ", (unsigned long) add);
 			}
 			prev = n2;
 			n2 = add;
