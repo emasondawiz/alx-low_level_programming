@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -22,4 +22,5 @@ int main(void)
 		}
 	}
 	printf("%d\n", sum);
+	return (0);
 }
