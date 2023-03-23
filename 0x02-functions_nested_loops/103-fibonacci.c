@@ -22,14 +22,12 @@ int main(void)
 	add = n1 + n2;
 	prev = n2;
 	num = 0;
-	limit = 4000000;
 	while (num < data)
 	{
 		if (num == 0)
 		{
 			if (n1 % 2 == 0)
 				sumofeven += n1;
-
 		}
 		else if (num == 1)
 		{
@@ -38,19 +36,21 @@ int main(void)
 		}
 		else
 		{
-			if (add <= limit)
+			if (add <= 4000000)
+			{
 				if (add % 2 == 0)
 					sumofeven += add;
-				else
-				{
-					break;
-				}
+			}
+			else
+			{
+				break;
+			}
 			prev = n2;
 			n2 = add;
 			add = prev + n2;
 		}
 		num++;
 	}
-	printf("%d\n", sumofeven);
+	printf("%ld\n", sumofeven);
 	return (0);
 }
