@@ -12,17 +12,12 @@
 
 int _isdigit(int c)
 {
-	int i, count;
-
-	count = 0;
-
-	for (i = 0; i <= 9; i++)
+	if (isdigit(c))
 	{
-		if (c == i)
-		{
-			count = count + 1;
-			break;
-		}
+		return (1);
 	}
-	return (count);
+	else
+	{
+		return (0);
+	}
 }
