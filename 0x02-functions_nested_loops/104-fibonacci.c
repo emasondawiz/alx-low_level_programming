@@ -19,8 +19,8 @@ int main(void)
 	unsigned long int add, prev, n2, n1;
 
 
-	n1 = 0;
-	n2 = 1;
+	n1 = 1;
+	n2 = 2;
 	add = n1 + n2;
 	prev = n2;
 	num = 0;
