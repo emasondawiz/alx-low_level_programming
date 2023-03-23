@@ -28,22 +28,22 @@ int main(void)
 	{
 		if (num == 0)
 		{
-			printf("%ld, ", n1);
+			printf("%lu, ", n1);
 		}
 		else if (num == 1)
 		{
-			printf("%ld, ", n2);
+			printf("%lu, ", n2);
 		}
 		else
 		{
 
 			if (num == 97)
 			{
-				printf("%ld\n", labs(add));
+				printf("%lu\n", add);
 			}
 			else
 			{
-				printf("%ld, ", labs(add));
+				printf("%lu, ", add);
 			}
 			prev = n2;
 			n2 = add;
