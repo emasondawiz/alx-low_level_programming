@@ -12,7 +12,7 @@
 
 int _atoi(char *s)
 {
-	int len, minuscheck, num, i;
+	unsigned int len, minuscheck, num, i;
 
 	len = strlen(s);
 	minuscheck = 0;
