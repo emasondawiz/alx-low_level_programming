@@ -11,7 +11,7 @@
 char *leet(char *input)
 {
 	int len, lens, i, j;
-	char content;
+
 
 	char s[] = "AEOTLaeotl";
 	char num[] = "4307143071";
