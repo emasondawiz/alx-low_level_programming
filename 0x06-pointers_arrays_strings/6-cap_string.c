@@ -1,0 +1,45 @@
+#include "main.h"
+
+/**
+ * cap_string - Capitalise first word
+ *
+ * @input: Input variable
+ *
+ * Return: Always 0
+ *
+ */
+
+char *cap_string(char *input)
+{
+	int len, i;
+	char content;
+
+	len = strlen(input);
+	for (i = 0; i < len; i++)
+	{
+		if (i == 0 && input[i] != ' ')
+		{
+			content = toupper(input[i]);
+			input[i] = content;
+		}
+		else
+		{
+			if (input[i] == '\t')
+			{
+				content = ' ';
+				input[i] = content;
+			}
+			if (input[i - 1] == ' ' || input[i - 1] == '\n' || input[i - 1] == '.')
+			{
+				content = toupper(input[i]);
+				input[i] = content;
+			}
+			else
+			{
+				content = input[i];
+				input[i] = content;
+			}
+		}
+	}
+	return (input);
+}
