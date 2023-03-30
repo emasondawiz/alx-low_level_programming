@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * string_toupper - To upper
+ *
+ * @input: Input variable
+ * Return: Always 0
+ *
+ */
+
+char *string_toupper(char *input)
+{
+	int len, i;
+	char content;
+
+	len = strlen(input);
+
+	for (i = 0; i < len; i++)
+	{
+		content = toupper(input[i]);
+		input[i] = content;
+	}
+	return(input);
+}
