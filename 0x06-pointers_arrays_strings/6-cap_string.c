@@ -29,7 +29,7 @@ char *cap_string(char *input)
 				content = ' ';
 				input[i] = content;
 			}
-			if (input[i - 1] == ' ' || input[i - 1] == '\n' || input[i - 1] == '.')
+			else if (input[i - 1] == ' ' || input[i - 1] == '\n' || input[i - 1] == '.')
 			{
 				content = toupper(input[i]);
 				input[i] = content;
