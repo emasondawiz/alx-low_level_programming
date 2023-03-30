@@ -41,5 +41,4 @@ char *cap_string(char *input)
 			}
 		}
 	}
-	return (input);
 }
