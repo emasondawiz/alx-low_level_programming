@@ -24,12 +24,8 @@ char *cap_string(char *input)
 		}
 		else
 		{
-			if (input[i] == '\t')
-			{
-				content = ' ';
-				input[i] = content;
-			}
-			else if (input[i - 1] == ' ' || input[i - 1] == '\n' || input[i - 1] == '.')
+			if (input[i - 1] == ' ' || input[i - 1] == '\n' || input[i - 1] == '.'
+			    || input[i - 1] == '\t')
 			{
 				content = toupper(input[i]);
 				input[i] = content;
