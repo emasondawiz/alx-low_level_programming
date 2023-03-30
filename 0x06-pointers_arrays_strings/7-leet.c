@@ -14,7 +14,7 @@ char *leet(char *input)
 	char content;
 
 	len = strlen(input);
-	for (int i = 0; i < len; i++)
+	for (i = 0; i < len; i++)
 	{
 		if (input[i] == 'a' || input[i] == 'A')
 		{
