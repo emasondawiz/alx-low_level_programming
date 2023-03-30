@@ -10,37 +10,24 @@
 
 char *leet(char *input)
 {
-	int len, i;
+	int len, lens, i, j;
 	char content;
 
+	char s[] = "AEOTLaeotl";
+	char num[] = "4307143071";
+
+
 	len = strlen(input);
+	lens = strlen(num);
 	for (i = 0; i < len; i++)
 	{
-		if (input[i] == 'a' || input[i] == 'A')
+		for (j = 0; j < lens; j++)
 		{
-			content = '4';
+			if (input[i] == s[j])
+			{
+				*(input + i) = num[j];
+			}
 		}
-		else if (input[i] == 'e' || input[i] == 'E')
-		{
-			content = '3';
-		}
-		else if (input[i] == 'o' || input[i] == 'O')
-		{
-			content = '0';
-		}
-		else if (input[i] == 't' || input[i] == 'T')
-		{
-			content = '7';
-		}
-		else if (input[i] == 'l' || input[i] == 'L')
-		{
-			content = '1';
-		}
-		else
-		{
-			content = input[i];
-		}
-		input[i] = content;
 	}
 	return (input);
 }
