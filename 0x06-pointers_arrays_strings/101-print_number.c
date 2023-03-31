@@ -3,21 +3,22 @@
 /**
  * print_number - print all integers
  *
- * @n: Input variable
+ * @a: Input variable
  *
  */
 
-void print_number(int n)
+void print_number(int a)
 {
+	unsigned int n = a;
 	int numc, result, check, i, j, n1, counter;
 
-	if (n == 0)
+	if (a == 0)
 	{
 		_putchar(n + '0');
 	}
 	else
 	{
-		if (n < 0)
+		if (a < 0)
 		{
 			_putchar('-');
 			n = -n;
