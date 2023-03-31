@@ -3,12 +3,14 @@
 /**
  * print_number - print all integers
  *
- * @n: Input variable
+ * @a: Input variable
  *
  */
 
-void print_number(int n)
+void print_number(int a)
 {
+	unsigned int n = a;
+
 	if (n == 0)
 	{
 		_putchar(n + '0');
