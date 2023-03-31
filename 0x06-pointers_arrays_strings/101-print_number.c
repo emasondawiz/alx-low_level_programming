@@ -3,13 +3,13 @@
 /**
  * print_number - print all integers
  *
- * @a: Input variable
+ * @n: Input variable
  *
  */
 
-void print_number(int a)
+void print_number(int n)
 {
-	unsigned int n = a;
+	int numc, result, check, i, j, n1, counter;
 
 	if (n == 0)
 	{
@@ -23,8 +23,6 @@ void print_number(int a)
 			n = -n;
 		}
 
-		int i, j, numc, result, check, n1, counter;
-
 		numc = 0;
 		result = 0;
 		check = n;
@@ -33,6 +31,7 @@ void print_number(int a)
 			numc = numc + 1;
 			check = check / 10;
 		} while (check != 0);
+
 
 		for (i = numc; i > 0; i--)
 		{
