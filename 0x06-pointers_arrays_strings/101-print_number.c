@@ -3,29 +3,29 @@
 /**
  * print_number - print all integers
  *
- * @num: Input variable
+ * @n: Input variable
  *
  */
 
-void print_number(int num)
+void print_number(int n)
 {
-	if (num == 0)
+	if (n == 0)
 	{
-		_putchar(num + '0');
+		_putchar(n + '0');
 	}
 	else
 	{
-		if (num < 0)
+		if (n < 0)
 		{
 			_putchar('-');
-			num = -num;
+			n = -n;
 		}
 
-		int i, j, numc, result, check, n, counter;
+		int i, j, numc, result, check, n1, counter;
 
 		numc = 0;
 		result = 0;
-		check = num;
+		check = n;
 
 		do {
 			numc++;
@@ -34,17 +34,17 @@ void print_number(int num)
 
 		for (i = numc; i > 0; i--)
 		{
-			n = 1;
+			n1 = 1;
 			counter = 1;
 			for (j = i; j > 0; j--)
 			{
-				counter = counter * n;
-				n = 10;
+				counter = counter * n1;
+				n1 = 10;
 			}
-			result = num / counter;
+			result = n / counter;
 			_putchar(result + '0');
-			result = num - (result * counter);
-			num = result;
+			result = n - (result * counter);
+			n = result;
 		}
 	}
 }
