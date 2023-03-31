@@ -12,3 +12,4 @@ char *string_toupper(char *);
 char *cap_string(char *input);
 char *leet(char *input);
 char *rot13(char *);
+void print_number(int num);
