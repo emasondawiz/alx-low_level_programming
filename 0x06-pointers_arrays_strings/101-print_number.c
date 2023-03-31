@@ -28,7 +28,7 @@ void print_number(int n)
 		check = n;
 
 		do {
-			numc++;
+			numc = numc + 1;
 			check = check / 10;
 		} while (check != 0);
 
