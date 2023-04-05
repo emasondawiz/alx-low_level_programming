@@ -14,3 +14,5 @@ int myprime(int n, int m);
 int is_prime_number(int n);
 int mychecker(char *s, int end, int start);
 int is_palindrome(char *s);
+int _sqrt_recursion(int n);
+int rootchecks(int n , int root);
