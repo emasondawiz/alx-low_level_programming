@@ -25,6 +25,10 @@ int myprime(int n, int m)
 	{
 		return (1);
 	}
+	else if (n == 1)
+	{
+		return (1);
+	}
 	else
 	{
 		if (n % m == 0)
