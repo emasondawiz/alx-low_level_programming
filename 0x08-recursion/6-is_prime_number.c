@@ -27,7 +27,7 @@ int myprime(int n, int m)
 	}
 	else if (n == 1)
 	{
-		return (1);
+		return (0);
 	}
 	else
 	{
