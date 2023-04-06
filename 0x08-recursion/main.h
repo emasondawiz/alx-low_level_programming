@@ -16,3 +16,5 @@ int mychecker(char *s, int end, int start);
 int is_palindrome(char *s);
 int _sqrt_recursion(int n);
 int rootchecks(int n , int root);
+int wildcmp(char *s1, char *s2);
+int substring_match(char *s1, char *s2, char *after_wldcd);
