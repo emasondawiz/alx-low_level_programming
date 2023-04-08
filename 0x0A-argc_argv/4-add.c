@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	{
 		if (atoi(argv[i]) == 0)
 		{
-			puts("Error");
+			printf("Error\n");
 			return (1);
 		}
 		else
