@@ -24,16 +24,15 @@ char *str_concat(char *s1, char *s2)
 		size2 = strlen(s2);
 
 	n = size1 + size2;
+	if (n == 0)
+		return (NULL);
+
 	mystr = (char *) malloc(n * sizeof(char));
 
 	if (s1 == NULL)
-	{
 		strcat(mystr, "");
-	}
 	else
-	{
 		strcat(mystr, s1);
-	}
 	if (s2 == NULL)
 	{
 		strcat(mystr, "");
