@@ -10,10 +10,8 @@
 char *argstostr(int ac, char **av)
 {
 	char *mystr;
-
-	 int len, a, k;
-
-	 unsigned long int b;
+	int len, a, k;
+	unsigned long int b;
 
 	len = k = 0;
 
@@ -36,7 +34,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (a = 1; a < ac; a++)
+	for (a = 0; a < ac; a++)
 	{
 		for (b = 0; b < strlen(av[a]); b++)
 		{
