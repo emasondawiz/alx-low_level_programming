@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ * malloc_checked - Function
+ * @b: Input value
+ * Return: Always success
+ */
+
+void *malloc_checked(unsigned int b)
+{
+	void *mypointer;
+
+	mypointer = (void *)malloc(b);
+
+	if (mypointer == NULL)
+		exit (98);
+	return (mypointer);
+}
