@@ -1,0 +1,22 @@
+#include "main.h"
+
+/**
+ * _calloc - Function that allocate memory
+ * @nmemb: Input value;
+ * @size: Input value
+ * Return: Always Success
+ */
+
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	void *myp;
+
+	myp = (void *)malloc(size * nmemb);
+
+	if (myp == NULL)
+		return (NULL);
+	return (myp);
+}
