@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * str_nconcat - Return the combination of two strings
+ * string_nconcat - Return the combination of two strings
  * @s1: Input value
  * @s2: Input value
  * @n: Input value
@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		size2 = strlen(s2);
 
-	len = size1 + size2;
+	len = size1 + n;
 	if (len == 0)
 		len = 1;
 
@@ -35,16 +35,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		strcat(mystr, s1);
 	if (s2 == NULL)
-	{
 		strcat(mystr, "");
-	}
 	else if (n >= size2)
-	{
 		strcat(mystr, s2);
-	}
 	else
 	{
-		strncat(mystr, s2,n);
+		strncat(mystr, s2, n);
 	}
 	if (mystr == NULL)
 	{
