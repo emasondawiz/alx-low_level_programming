@@ -2,16 +2,38 @@
 
 /**
  * main - Entry point
- * @argc: Input
+ * @ac: Input
  * @argv: Input
  * Return: Always success
  */
 
-int main(int argc, char **argv)
+int main(int ac, char *argv[])
 {
-	(void) argc;
+	int *calc;
 
-	(void) argv;
+	if (ac != 3)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	if (atoi(argv[1]) <= 0 || atoi(argv[2]) <= 0)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	calc = (int *)malloc((atoi(argv[1]) * atoi(argv[2])) * sizeof(int));
+
+	if (calc == NULL)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+
+	calc[0] = atoi(argv[1]) * atoi(argv[2]);
+
+	printf("%d\n", calc[0]);
+
+	free(calc);
 
 	return (0);
 }
