@@ -1,8 +1,6 @@
 #ifndef EMASON
 #define EMASON
-#include <stdio.h>
-
-
+#include <stdlib.h>
 
 /**
  * struct dog - Dog struct
@@ -17,5 +15,7 @@ struct dog
 	float age;
 	char *owner;
 };
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
