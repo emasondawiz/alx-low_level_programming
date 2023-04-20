@@ -17,7 +17,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		if (i + 1 == n)
 		{
-			printf("%d\n", va_arg(myaps, int));
+			printf("%d", va_arg(myaps, int));
 		}
 		else
 		{
@@ -31,5 +31,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			}
 		}
 	}
+	printf("\n");
+
 	va_end(myaps);
 }
