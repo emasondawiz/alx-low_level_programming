@@ -11,9 +11,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list myaps;
 
-	if (separator == NULL)
+	if (n == NULL)
 	{
-		separator = "";
+		return;
 	}
 
 	va_start(myaps, n);
@@ -26,7 +26,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("%d%s", va_arg(myaps, int), separator);
+			if (separator != NULL)
+				printf("%d%s", va_arg(myaps, int), separator);
+			else
+				printf("%d", va_arg(myaps, int));
 		}
 	}
 	va_end(myaps);
