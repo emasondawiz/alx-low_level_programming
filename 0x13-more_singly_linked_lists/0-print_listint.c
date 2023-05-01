@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * listint_len - Function that print the length of the node and also print
  * @h: Input value
@@ -7,7 +8,9 @@
 
 size_t listint_len(const listint_t *h)
 {
-	int count = 0;
+	int count;
+
+	count = 0;
 
 	while (h)
 	{
