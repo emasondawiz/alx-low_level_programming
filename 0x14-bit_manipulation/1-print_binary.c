@@ -7,10 +7,15 @@
 
 void print_binary(unsigned long int n)
 {
-	int curr = 1, previous = 0, count = 0, i, j, basepower = 1;
-	int holder = n, result = 0;
+	int count = 0, i, j;
+	long int nn = (long int) n;
+	long int holder, result = 0, curr = 1, previous = 0, basepower = 1;
 
-	while (curr + previous < (int)n)
+	if (nn < 0)
+		nn = -(nn);
+	holder = nn;
+
+	while (curr + previous < nn)
 	{
 		previous = previous + curr;
 		curr = curr * 2;
