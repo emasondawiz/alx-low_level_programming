@@ -4,8 +4,7 @@
  * set_bit - function that sets bit for 1(one)
  * @n: input value
  * @index: input value
- *
- * Return: 1 for success, -1 for failure
+ * Return:Always success
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
