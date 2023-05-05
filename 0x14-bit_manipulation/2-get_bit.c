@@ -13,6 +13,9 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	char *arr;
 
+	if ((long int)n < 0)
+		n = -(n);
+
 	temp = n, div = n;
 
 	if ((int)index < 0)
