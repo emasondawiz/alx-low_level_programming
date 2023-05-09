@@ -8,18 +8,18 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fp, mywrite, counter = 0;
+	int fp, counter = 0, fp, mywrite;
 
 	if (filename == NULL)
 		return (-1);
 
-	if (text_content != NULL)
+	if (text_content)
 		counter = counter + count_str(text_content);
 
 	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	mywrite = write(fp, text_content, counter);
 
-	if (fp == -1 || mywrite == -1)
+	if (mywrite == -1 || fp == -1)
 		return (-1);
 
 	close(fp);
